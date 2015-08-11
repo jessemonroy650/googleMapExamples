@@ -4,7 +4,7 @@
 ## First Some Debugging Points ##
 First let's reiterate some debugging points
 
-* Use a border on the div *{border:solid 1px black;}*
+* Use a border on the `<div>` *{border:solid 1px black;}*
 * Double-check your `<div>` *id*
 * Don't use 'map' as an *id*
 * Open up the console (watch files load & watch for Javascript errors)
@@ -27,6 +27,6 @@ Both routines are in the javascript file: `mapBasic.js`
 
 * Sync - *initializeMap()* expects the google library to be loaded. Then, it creates the "map" objects and calls all the components to complete the map (slider,buttons,labels,etc.).
 
-[footnote]
-# Alternatively, you could use `<body onload="onBodyLoad()">`
-[/footnote]
+>
+> 1. Alternatively, you could use `<body onload="onBodyLoad()">`
+>
