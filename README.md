@@ -10,8 +10,7 @@ This tutorial does three major things
 ## Make it Happen ##
 1. Edit the file `insertGoogleKey`. 
 2. Replace the string `YOUR_TOKEN_HERE` with your Google API key for maps.
-3. Then,
-```
+3. Then, ```
 chmod +x insertGoogleKey
 ./insertGoogleKey
 ```
