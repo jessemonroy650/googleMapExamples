@@ -53,13 +53,13 @@ geoCoderObject.geocode(google.maps.GeocoderRequest,
 
 ### Constructor ###
 
-Geocoder() 	Creates a new instance of a Geocoder that sends geocode requests to Google servers.
+`Geocoder()` Creates a new instance of a Geocoder that sends geocode requests to Google servers.
 
 ### method ##
 
 geocode(request:GeocoderRequest, callback:function(Array<GeocoderResult>, GeocoderStatus))
 
-* google.maps.GeocoderRequest (object) --> Geocoder()
+* `google.maps.GeocoderRequest` (object) --> Geocoder()
 * The specification for a geocoding request to be sent to the Geocoder
 NOTE: requires at least one of the following: *'address','location', or 'placeId'*.
 ```
@@ -73,18 +73,18 @@ region:""                 // (optional)
 }
 ```
 
-* google.maps.GeocoderComponentRestrictions (object) -->  Restrict what is returned
+* `google.maps.GeocoderComponentRestrictions` (object) -->  Restrict what is returned
 ```
 {administrativeArea:"",country:"",locality:"",	postalCode:"",route:""}
 ```
 
-* google.maps.GeocoderStatus (class) -> (linear array)
+* `google.maps.GeocoderStatus` (class) -> (linear array)
 * The status returned by the Geocoder on the completion of a call to geocode()
 ```
 [ERROR,INVALID_REQUEST,OK,OVER_QUERY_LIMIT,REQUEST_DENIED,UNKNOWN_ERROR,ZERO_RESULTS]
 ```
 
-* google.maps.GeocoderResult (object)
+* `google.maps.GeocoderResult` (object)
 * A single geocoder result retrieved from the geocode server. A geocode request may return multiple result objects. Note that though this result is "JSON-like," it is not strictly JSON, as it indirectly includes a LatLng object.
 ```
 {
@@ -98,7 +98,7 @@ types:[https://developers.google.com/maps/documentation/javascript/geocoding#Geo
 }
 ```
 
-* google.maps.GeocoderAddressComponent (object)
+* `google.maps.GeocoderAddressComponent` (object)
 * A single address component within a GeocoderResult. A full address may consist of multiple address components.
 ```
 {
@@ -108,13 +108,13 @@ types:[https://developers.google.com/maps/documentation/geocoding/intro#Types]
 }
 ```
 
-* google.maps.GeocoderGeometry  (object)
+* `google.maps.GeocoderGeometry`  (object)
 * Geometry information about this GeocoderResult
 ```
 {bounds:"",location:"",location_type:(google.maps.GeocoderLocationType),viewport:""}
 ```
 
-* google.maps.GeocoderLocationType (class) -> (linear array)
+* `google.maps.GeocoderLocationType` (class) -> (linear array)
 * Describes the type of location returned from a geocode.
 ```
 [APPROXIMATE,GEOMETRIC_CENTER,RANGE_INTERPOLATED,ROOFTOP]
