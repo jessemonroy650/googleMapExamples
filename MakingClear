@@ -1,9 +1,0 @@
-
-
-What's not clear from google maps is how to hook into the library, especially if you are not used to JPO (Javascript Prototypal Objects).
-
-In our case, we created a global variable named gMap in our index.html
-Then in the last function call we make (before the map is drawn on the screen), we assign to ```gMap``` from ```google.maps.Map()```. This JPO is now our hook in to the "google map object" with will create our visual make objects; like slider,buttons, and labels.
-
-To be clear, ```gMap``` is for drawing the map. For other objects there are similar function calls, like ``google.maps.Markers()```
-

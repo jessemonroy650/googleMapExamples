@@ -15,22 +15,24 @@ This tutorial does three major things
 chmod +x insertGoogleKey
 ./insertGoogleKey
 ```
-4. This will insert you "Google" API key in the appropriate places.
+4. This will insert you "Google API" key in the appropriate places.
 5. Open up `index.html` in your webbrowser.
 
 
 ### Un-organized notes ###
 * [GeoCoder_Classes](GeoCoder_Classes)
 * [MakingClear](MakingClear)
-* [Notes on map production](Notes on map production)
-* [blogEntry](blogEntry)
-* [config.xml](config.xml)
+* [Notes on map production](Notes on map production) - unfinished part of tutorial
+* [blogEntry](blogEntry) - unfinished blog Entry
+
 
 ## Street Address to Latitude, Longitude with GPS ##
 
 http://geocoder.us/
 
 ## The Seven (7) Maps ##
+
+The numbers below correspond to the numbers in the app.
 
 1. Map loaded in synchronous mode of San Francisco, California.
 2. Map loaded in asynchronous mode of San Francisco, California.
@@ -39,7 +41,6 @@ http://geocoder.us/
 5. Initially the map loads in asynchronous mode of Hacker Dojo, 599 Fairchild Drive, Mountain View, CA 94043. Then a GPS lookup of your current location, a new map loads and a reverse geocoding lookup is made; the answer will show up in the lower panel.
 6. For your current location, the map loads and and there is a reverse geocoding look; the answer will show up in the lower panel. NOTE: No map loading or reverse geocoding happen, then the network is not avaiable, or the app does not get permission to do a GPS lookup.
 7. Initially the map loads in asynchronous mode of FabLab, 806 Montana Ave, El Paso, Texas 79902. The map loads and and there is a reverse geocoding look for your current location; the answer will show up in the lower panel. 
-
 
 ## Common ERROR Codes ##
 
