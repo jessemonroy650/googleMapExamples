@@ -24,9 +24,9 @@ chmod +x insertGoogleKey
 
 ### Un-organized notes ###
 
-* [GeoCoder_Classes](GeoCoder_Classes) - Stuff copied directly from google
+* [GeoCoder_Classes](GeoCoder_Classes.md) - Stuff copied directly from google
 * [MakingClear](MakingClear.md) - An important part of the unfinished tutorial
-* [Notes on map production](Notes on map production) - unfinished part of tutorial
+* [Notes on map production](Notes on map production.md) - unfinished part of tutorial
 * [blogEntry](blogEntry) - unfinished blog Entry
 
 
