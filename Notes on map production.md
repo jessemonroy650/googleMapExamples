@@ -4,12 +4,11 @@
 ## First Some Debugging Points ##
 First let's reiterate some debugging points
 
-* Use a border on the div ''{border:solid 1px black;}''
-* Double-check your 'div' ''id''
-* Don't use 'map' as an ''id''
+* Use a border on the div *{border:solid 1px black;}*
+* Double-check your `<div>` *id*
+* Don't use 'map' as an *id*
 * Open up the console (watch files load & watch for Javascript errors)
 * Load synchronously when testing, regardless of vendor directions
-
 
 ## Asyncronously vs. Syncronously ##
 Asyncronously, means that a callback is made by the callee, once the callee is ready. This differs from the caller. 
