@@ -10,16 +10,16 @@ This tutorial does three major things
 ## Make it Happen ##
 1. Edit the file `insertGoogleKey`. 
 2. Replace the string `YOUR_TOKEN_HERE` with your Google API key for maps.
-3.Then,
+3. Then,
 ```
 chmod +x insertGoogleKey
 ./insertGoogleKey
 ```
-4. This will insert you Google API key in the appropriate places.
+4. This will insert you "Google" API key in the appropriate places.
 5. Open up `index.html` in your webbrowser.
 
 
-## Un-organized notes ##
+### Un-organized notes ###
 * [GeoCoder_Classes](GeoCoder_Classes)
 * [MakingClear](MakingClear)
 * [Notes on map production](Notes on map production)
