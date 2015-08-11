@@ -5,9 +5,10 @@ This tutorial does three major things
 
 1. Gets Google Maps based on latlong (Latitude and Longitude)
 2. Does a reverse geocoding lookup (latlong to street Address)
-3. Does a geolocation lookup (or GPS if available), which returns latlong; then draws a map and does a reverse geocoding lookup.
+3. Does a geolocation lookup (or GPS, if available), which returns latlong, then draws a map and does a reverse geocoding lookup.
 
 ## Make it Happen ##
+These instructions are for Linux, *BSD, *nix, and OSX.
 
 * Edit the file `insertGoogleKey`. 
 * Replace the string `YOUR_TOKEN_HERE` with your Google API key for maps.
@@ -17,7 +18,7 @@ chmod +x insertGoogleKey
 ./insertGoogleKey
 ```
 
-* This will insert you "Google API" key in the appropriate places.
+* This will insert your "Google API" key in the appropriate places.
 * Open up `index.html` in your webbrowser.
 
 
@@ -30,6 +31,10 @@ chmod +x insertGoogleKey
 
 
 ## Street Address to Latitude, Longitude with GPS ##
+
+There are a few of these services on the Internet, they are not extremely accurate.
+
+http://www.latlong.net/
 
 http://geocoder.us/
 
@@ -47,14 +52,18 @@ The numbers below correspond to the numbers in the app.
 
 ## Common ERROR Codes ##
 
-* *This page was unable to display a Google Maps element. The provided Google API key is invalid or this site is not authorized to use it. Error Code: InvalidKeyOrUnauthorizedURLMapError*
+* **ERROR:** *This page was unable to display a Google Maps element. The provided Google API key is invalid or this site is not authorized to use it. Error Code: InvalidKeyOrUnauthorizedURLMapError*
 * **THE FIX:** Replace `YOUR_TOKEN_HERE` with your Google API Key, and run `insertGoogleKey`.
 
-* code: 2 *message: application does not have sufficient geolocation permission.*
+* **ERROR:** code: 2 *message: application does not have sufficient geolocation permission.*
 * **THE FIX:** Add the geolocation plugin to config.xml
 
-* code: 2 *message: The last location provider was diabled*
+* **ERROR:** code: 2 *message: The last location provider was diabled*
 * **THE FIX:** Turn on GPS.
 
-* code: 3 *message: Timeout expired*
+* **ERROR:** code: 3 *message: Timeout expired*
 * **THE FIX:** Turn on GPS.
+
+For more type of possible GPS error, scroll to the bottom of this page:<br />
+[What is GPS?](http://www8.garmin.com/aboutGPS/)
+

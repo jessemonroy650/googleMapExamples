@@ -6,6 +6,8 @@ What's not clear from google maps is how to hook into the library, especially if
 2. Create a class object (map, marker, slider, etc.), sometime initializing it.
 3. Make a call to an object method.
 
+See a psuedo-example in [GeoCoder_Classes.md](GeoCoder_Classes.md)
+
 ### 1. Load the Libraries ###
 
 The first call loads the javascript library in one of two ways: 
@@ -35,3 +37,5 @@ To be clear, `gMap` is for drawing the map. For other objects there are similar 
 ### 3. Make a call to an object method. ###
 
 Some classes have just one method. Some classes have things you can attach to (or override the default).
+
+See a psuedo-example in [GeoCoder_Classes.md](GeoCoder_Classes.md)
