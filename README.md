@@ -8,19 +8,23 @@ This tutorial does three major things
 3. Does a geolocation lookup (or GPS if available), which returns latlong; then draws a map and does a reverse geocoding lookup.
 
 ## Make it Happen ##
-1. Edit the file `insertGoogleKey`. 
-2. Replace the string `YOUR_TOKEN_HERE` with your Google API key for maps.
-3. Then, ```
+
+* Edit the file `insertGoogleKey`. 
+* Replace the string `YOUR_TOKEN_HERE` with your Google API key for maps.
+* Then, 
+```
 chmod +x insertGoogleKey
 ./insertGoogleKey
 ```
-4. This will insert you "Google API" key in the appropriate places.
-5. Open up `index.html` in your webbrowser.
+
+* This will insert you "Google API" key in the appropriate places.
+* Open up `index.html` in your webbrowser.
 
 
 ### Un-organized notes ###
-* [GeoCoder_Classes](GeoCoder_Classes)
-* [MakingClear](MakingClear)
+
+* [GeoCoder_Classes](GeoCoder_Classes) - Stuff copied directly from google
+* [MakingClear](MakingClear) - An important part of the unfinished tutorial
 * [Notes on map production](Notes on map production) - unfinished part of tutorial
 * [blogEntry](blogEntry) - unfinished blog Entry
 
