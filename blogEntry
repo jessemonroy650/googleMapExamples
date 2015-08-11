@@ -1,0 +1,35 @@
+This blog entry is for google maps. 
+
+https://maps.google.com/
+Google maps, owned by google (who else!?), is the techies favorite, but it is certainly not the only game in town. However, google has integrated many services, which makes it a crowd favorite too. Many of us have used navigation and other
+
+http://en.wikipedia.org/wiki/Google_Maps#History
+services, and now with 
+
+http://techcrunch.com/2013/06/11/its-official-google-buys-waze-giving-a-social-data-boost-to-its-location-and-mapping-business/
+waze, the navigation is even smarter.
+
+
+Google has a free plan for developers – which includes 
+http://www.google.com/enterprise/mapsearth/products/mapsapi.html
+
+2500 requests per day 
+
+
+What follows are notes on the production for google Maps. REMINDER: my blog entries are for HTML5 and Javascript.
+
+;'''START HERE:'''
+: 
+
+;'''THEN HERE:'''
+: 
+
+;'''IMPLEMENTED THIS:'''
+: 
+
+; '''My Github Example'''
+:
+
+== Notes on Map Production ==
+
+=== {{Specific Issues}} ===

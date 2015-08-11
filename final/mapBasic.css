@@ -1,0 +1,8 @@
+#mapBasic {height:450px;width:100%;border:solid 1px black;}
+#feedback, #content {border:black solid 1px;height:3em;text-align:right;}
+@media screen and (max-width:640px) {
+  #mapBasic {height:350px;}
+}
+@media screen and (max-width:320px) {
+  #mapBasic {height:300px;}
+}

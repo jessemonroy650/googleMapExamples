@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#
+YOURKEY="YOUR_TOKEN_HERE"
+PLACEHOLDER="{{YOUR_GOOGLEMAP_TOKEN_HERE}}"
+
+THEFILE=`grep -l ${PLACEHOLDER} */* `
+
+for F in ${THEFILE}
+do
+	echo ${F}
+    sed -i 's/'${PLACEHOLDER}'/'${YOURKEY}'/' ${F}
+done

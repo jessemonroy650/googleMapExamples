@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <!-- 2015-06-18 - ADDED xmlns:android so the Android properties can be extended -->
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:android   = "http://schemas.android.com/apk/res/android"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.bsdmasterindex.googlemapexamples"
+        version     = "1.0.0"
+        versionCode = "10" >
+        <!-- versionCode is optional and Android only -->
+        <preference name="phonegap-version" value="3.5.0" />
+
+        <name>Google Map Examples</name>
+        <description>Seven (7) Google map examples that are part of a tutorial.</description>
+        <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">
+        Jesse Monroy
+        </author>
+
+        <!-- Android SECTION -->
+        <gap:platform name="android" />
+
+        <!-- iOS SECTION -->
+        <gap:platform name="ios" />
+
+        <!-- App requested permission -->
+        <preference name="permissions" value="none"/>
+
+        <!-- PLUGINS PLUGINS -->
+        <!-- device required so we can detect if we are using iOS -->
+		<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+		<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+
+    </widget>

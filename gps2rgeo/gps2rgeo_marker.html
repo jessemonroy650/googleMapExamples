@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Marker/GPS 2 Reverse Geocoding - Asynchronous</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link href="mapBasic.css" rel="stylesheet" type="text/css" media="screen" title="no title">
+    <style>
+    * {margin:0;padding:0;font-size:large;}
+    #feedback, #content {border:black solid 1px;height:5em;text-align:right;}
+    .a {margin:1em;}
+    .b {margin:0.2em;padding:0.2em;}
+    </style>
+    <script src='gpsNotepad.js' type="text/javascript"></script>
+    <script src='gps.js' type="text/javascript"></script>
+    <script src='gps2rgeo_marker.js' type="text/javascript"></script>
+    <script>
+    </script>
+</head>
+<body >
+
+<div id='mapBasic'>
+</div>
+
+<div id='feedback'>
+    <span id=faddress class=a></span>
+</div>
+
+<div id='content'>
+    <span id=city  class=b></span><br />
+    <span id=state class=b></span>
+</div>
+
+<script>
+    /* The map we draw */
+    var gMapObject            = {};
+        gMapObject.gMap       = {};
+        gMapObject.gElementID = 'mapBasic';
+        gMapObject.gZoomSize  = 15;
+        // hacker dojo
+        gMapObject.gLat       = 37.402937;   // 37.8623390197754;
+        gMapObject.gLon       = -122.049943; // -122.430931091309;
+
+    /* hook to libraries */
+    var RevGEO = {};
+    //
+    function initializeGeo() {
+        RevGEO = reverseGeocode();
+        //RevGEO.loadMap(gMapObject);
+        //RevGEO.reverseGeocode({lat: gMapObject.gLat, lng: gMapObject.gLon}, drawstuff);
+        console.log('init map done.');
+        /* GPS */
+        pgGL = pgGeoLocation(ui_GPSonSuccess, ui_GPSonError); // Hook GPS to our view
+        pgGL.getLocation();                                 // one short GPS lookup
+        //pgGL.watchLocation();                                 // background GPS lookup
+        // NOTE: MAP DRAWING is now moves in 'ui_GPSonSuccess'
+    };
+    //
+    function drawstuff(results) {
+        // Full address
+        document.getElementById('faddress').innerHTML = results.formatted_address;
+        // City
+        document.getElementById('city').innerHTML  = RevGEO.decodeResults(results.address_components, 'locality');
+        // State
+        document.getElementById('state').innerHTML = RevGEO.decodeResults(results.address_components, 'administrative_area_level_1');
+    };
+
+    // Google Maps
+    loadGeoLibraries('initializeGeo');
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Reverse Geocoding - Asynchronous</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link href="mapBasic.css" rel="stylesheet" type="text/css" media="screen" title="no title">
+    <style>
+    * {font-size:large;}
+    #content {border:black solid 2px;height:150px;text-align:right;}
+    #address {}
+    </style>
+    <script src='revGeocoding_singleton.js' type="text/javascript"></script>
+    <script>
+    </script>
+</head>
+<body >
+
+<div id='mapBasic'>
+</div>
+
+<div id='content'>
+<span id=address></span>
+</div>
+
+<script>
+    /* The map we draw */
+    var gMapObject            = {};
+        gMapObject.gMap       = {};
+        gMapObject.gElementID = 'mapBasic';
+        // hacker dojo
+        gMapObject.gLat       =   37.402937; //  37.8623390197754;
+        gMapObject.gLon       = -122.049943; // -122.430931091309;
+        gMapObject.gZoomSize  = 15;
+
+    function fillInAddress(address) {
+        document.getElementById('address').innerHTML = address;
+    }
+
+    function drawMap() {
+        rGeo = reverseGeocode();
+        rGeo.drawMap(gMapObject.gElementID, gMapObject);
+        rGeo.reverseGeocode({lat: 31.8599, lng: -106.5609}, fillInAddress);
+    }
+    // Google Maps
+    loadGeoLibraries('drawMap');
+</script>
+
+</body>
+</html>

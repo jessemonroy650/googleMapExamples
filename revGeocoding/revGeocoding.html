@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Reverse Geocoding - Asynchronous</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link href="mapBasic.css" rel="stylesheet" type="text/css" media="screen" title="no title">
+    <style>
+    * {font-size:large;}
+    #content {border:black solid 5px;height:150px;}
+    </style>
+    <script src='revGeocoding.js' type="text/javascript"></script>
+    <script>
+        /* NOTE: These are global on purpose */
+        var gMap = {};
+        var gElementID = 'mapBasic';
+        var gZoomSize  = 10;
+        var gLat       = 37.8623390197754;
+        var gLon       = -122.430931091309;
+    </script>
+</head>
+<body >
+
+<div id='mapBasic'>
+</div>
+
+<div id='content'>
+</div>
+
+<script>
+    // Google Maps
+    loadMapScripts();
+</script>
+
+</body>
+</html>
