@@ -34,3 +34,4 @@ To be clear, `gMap` is for drawing the map. For other objects there are similar 
 
 ### 3. Make a call to an object method. ###
 
+Some classes have just one method. Some classes have things you can attach to (or override the default).
