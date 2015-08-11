@@ -60,7 +60,7 @@ Geocoder() 	Creates a new instance of a Geocoder that sends geocode requests to 
 geocode(request:GeocoderRequest, callback:function(Array<GeocoderResult>, GeocoderStatus))
 
 * google.maps.GeocoderRequest (object) --> Geocoder()
-The specification for a geocoding request to be sent to the Geocoder
+* The specification for a geocoding request to be sent to the Geocoder
 NOTE: requires at least one of the following: *'address','location', or 'placeId'*.
 ```
 {
@@ -79,13 +79,13 @@ region:""                 // (optional)
 ```
 
 * google.maps.GeocoderStatus (class) -> (linear array)
-The status returned by the Geocoder on the completion of a call to geocode()
+* The status returned by the Geocoder on the completion of a call to geocode()
 ```
 [ERROR,INVALID_REQUEST,OK,OVER_QUERY_LIMIT,REQUEST_DENIED,UNKNOWN_ERROR,ZERO_RESULTS]
 ```
 
 * google.maps.GeocoderResult (object)
-A single geocoder result retrieved from the geocode server. A geocode request may return multiple result objects. Note that though this result is "JSON-like," it is not strictly JSON, as it indirectly includes a LatLng object.
+* A single geocoder result retrieved from the geocode server. A geocode request may return multiple result objects. Note that though this result is "JSON-like," it is not strictly JSON, as it indirectly includes a LatLng object.
 ```
 {
 address_components:(google.maps.GeocoderAddressComponent)
@@ -99,8 +99,9 @@ types:[https://developers.google.com/maps/documentation/javascript/geocoding#Geo
 ```
 
 * google.maps.GeocoderAddressComponent (object)
-A single address component within a GeocoderResult. A full address may consist of multiple address components.
-```{
+* A single address component within a GeocoderResult. A full address may consist of multiple address components.
+```
+{
 long_name:"",
 short_name:"",
 types:[https://developers.google.com/maps/documentation/geocoding/intro#Types]
@@ -108,13 +109,13 @@ types:[https://developers.google.com/maps/documentation/geocoding/intro#Types]
 ```
 
 * google.maps.GeocoderGeometry  (object)
-Geometry information about this GeocoderResult
+* Geometry information about this GeocoderResult
 ```
 {bounds:"",location:"",location_type:(google.maps.GeocoderLocationType),viewport:""}
 ```
 
 * google.maps.GeocoderLocationType (class) -> (linear array)
-Describes the type of location returned from a geocode.
+* Describes the type of location returned from a geocode.
 ```
 [APPROXIMATE,GEOMETRIC_CENTER,RANGE_INTERPOLATED,ROOFTOP]
 ```
