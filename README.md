@@ -7,6 +7,10 @@ This tutorial does three major things
 2. Does a reverse geocoding lookup (latlong to street Address)
 3. Does a geolocation lookup (or GPS, if available), which returns latlong, then draws a map and does a reverse geocoding lookup.
 
+Before reading the tutorial, read [Notes on map production.md](Notes on map production.md). This contains debbugging notes, but reading it first will help with understanding some parts of this tutorial.
+
+The full tutorial is [here](Tutorial.md).
+
 ## Make it Happen ##
 These instructions are for Linux, *BSD, *nix, and OSX.
 

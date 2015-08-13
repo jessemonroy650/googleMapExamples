@@ -1,6 +1,5 @@
 # Notes on Google Map Production #
 
-
 ## First Some Debugging Points ##
 First let's reiterate some debugging points
 
