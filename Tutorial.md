@@ -91,9 +91,9 @@ r=false'></script>
 
 Next to create any Google map object we call the constructor and attach to our global namespace.
 
-In our case, we created a global variable named `gMap` in our `index.html`, then in the last function call we make (just before the map is drawn on the screen), we assign to `gMap` from `google.maps.Map()`. 
+In our case, we created a global variable named `gMap` in our `[index.html](index.html)`, then in the last function call we make (just before the map is drawn on the screen), we assign to `gMap` from `google.maps.Map()`. 
 
-To be clear, `gMap` is for drawing the map. For other objects there are similar function calls, like `google.maps.Markers()`. The other map objects we can call include sliders,buttons, and labels.
+To be clear, `gMap` is for drawing the map. For other objects, there are similar function calls, like `google.maps.Markers()`. The other map objects we can call include sliders, buttons, and labels.
 
 ### 3. Make a call to an object method. ###
 
