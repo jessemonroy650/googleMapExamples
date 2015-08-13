@@ -9,6 +9,11 @@ This tutorial does three major things
 
 >Before reading the tutorial, read [Notes on map production.md](Notes on map production.md). This contains debugging notes, but reading it first will help with understanding some parts of this tutorial.
 
+* [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/)
+* [Google Maps JavaScript API V3 Reference](https://developers.google.com/maps/documentation/javascript/3.exp/reference)
+* [Marker Reference](https://developers.google.com/maps/documentation/javascript/markers)
+* [GeoCoding Reference](https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple)
+
 The goal of this tutorial is to give you the framework for a map addendum.
 
 Many Apps have the secondary need for a map &ndash; based on your current location. With the current mobile technology, GPS is readily available on my most smart phones. There are two big issues with implmenting "a map of the current location with GPS".
