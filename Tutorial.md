@@ -57,7 +57,7 @@ The numbers below correspond to the numbers in the app.
 4. Map loaded in asynchronous mode of **"Hacker Dojo, 599 Fairchild Drive, Mountain View, CA 94043"**. Then there is a reverse geocoding look for "655 Redd Road, El Paso, TX 79912"; the answer will show up in the lower panels underneath the map. This shows that the map and geocoding API work separately and are not tied together.
 5. Load the map asynchronously with *"Hacker Dojo, 599 Fairchild Drive, Mountain View, CA 94043"*. Then a GPS lookup of your *current location* is done. After that a new map loads and a reverse geocoding lookup is made for your current location; the geocoding answer will show up in the lower panels.
 6. For your **current location**, the map loads and and there is a reverse geocoding look; the answer will show up in the lower panel. NOTE: If the network is not avaiable, or the app does not get permission to do a GPS lookup, then no map loading or reverse geocoding happen.
-7. Loads the map asynchronously with *"FabLab, 806 Montana Ave, El Paso, Texas 79902"*. Then a GPS lookup of your current location is done, the map loads, and there is a reverse geocoding lookup. The answer to the lookup will show up in the lower panels. 
+7. Loads the map asynchronously with ***"FabLab, 806 Montana Ave, El Paso, Texas 79902"***. Then a GPS lookup of your current location is done, the map loads, and there is a reverse geocoding lookup. The answer to the lookup will show up in the lower panels. 
 
 ## Making it Clear ##
 
