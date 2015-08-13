@@ -78,7 +78,7 @@ The first call loads the javascript library in one of two ways:
 <script rc='http://maps.googleapis.com/maps/api/js?v3.5&key={{YOUR_GOOGLEMAP_TOKEN_HERE}}&senso
 r=false'></script>
 `
-* asynchronously, it loads the library by creating an HTML load, with a URL that finishes with the name of the callback routine. 
+* asynchronously, it loads the library by creating an HTML element, with a URL that finishes with the name of the *callback* routine. 
 ```
     script.src = 'http://maps.googleapis.com/maps/api/js?' +
                     'v3.5&' + 

@@ -27,6 +27,9 @@ var google.maps.GeocoderRequest = {
 
 geoCoderObject.geocode(google.maps.GeocoderRequest,
 	function(google.maps.GeocoderResult, google.maps.GeocoderStatus) {
+        //
+        // This a structure of what is returned. It is not an assignment.
+        //
 		google.maps.GeocoderStatus = [ERROR,INVALID_REQUEST,OK,OVER_QUERY_LIMIT,REQUEST_DENIED,UNKNOWN_ERROR,ZERO_RESULTS];
 		google.maps.GeocoderResult = {
 			address_components: (google.maps.GeocoderAddressComponent)
