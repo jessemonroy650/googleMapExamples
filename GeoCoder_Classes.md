@@ -3,6 +3,8 @@ Date: 2015-08-08
 
 `google.maps.Geocoder`
 
+This document is an ad-hoc reorganization of the documentation of this javascript class.
+
 A service for converting between an address and a LatLng. This service can also do "reverse geocoding".
 
 https://developers.google.com/maps/documentation/javascript/reference#Geocoder

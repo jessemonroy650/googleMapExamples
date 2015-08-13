@@ -100,7 +100,7 @@ In our case, we created a global variable named `gMap` in our `[index.html](inde
 
 It will look like this:
 ```
-        self.gMap = new google.maps.Map(document.getElementById(mObj.gElementID), mapOptions);
+    gMap = new google.maps.Map(document.getElementById(gElementID), mapOptions);
 ```
 
 To be clear, `gMap` is for drawing the map. For other objects, there are similar function calls, like `google.maps.Markers()`. The other objects available include, but are not limited to, sliders, buttons, and labels.
