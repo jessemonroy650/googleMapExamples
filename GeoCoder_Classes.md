@@ -61,6 +61,8 @@ geoCoderObject.geocode(google.maps.GeocoderRequest,
 
 geocode(request:GeocoderRequest, callback:function(Array<GeocoderResult>, GeocoderStatus))
 
+### objects ##
+
 * `google.maps.GeocoderRequest` (object) --> Geocoder()
 * The specification for a geocoding request to be sent to the Geocoder
 NOTE: requires at least one of the following: *'address','location', or 'placeId'*.
