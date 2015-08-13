@@ -2,14 +2,11 @@
 Date: 2015-08-08
 
 `google.maps.Geocoder`
-
-This document is an ad-hoc reorganization of the documentation of this javascript class.
-
 A service for converting between an address and a LatLng. This service can also do "reverse geocoding".
 
 https://developers.google.com/maps/documentation/javascript/reference#Geocoder
 
-Google's documentation requires multiple reads to understand. It is poorly layed out. I think even in book layout this would be a pain. Many of the components are mislabeled or labeled in an obtuse format. In addition, the API design is obtuse and contorted - as if the information was clustered together by committee.
+This document is an ad-hoc reorganization of the documentation of this javascript class. Google's documentation requires multiple reads to understand. It is poorly layed out. I think even in book layout this would be a pain. Many of the components are mislabeled or labeled in an obtuse format. In addition, the API design is obtuse and contorted - as if the information was clustered together by committee.
 
 There is one class to create objects and one method. Everything else supports this. One side effect of this is getting a huge data structure back. I recommend taking time to learn the filter: `google.maps.GeocoderComponentRestrictions`.
 
