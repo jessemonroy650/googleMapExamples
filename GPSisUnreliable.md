@@ -18,8 +18,8 @@ In the forums I am always reiterating this, today I decide to put some links tog
 5. **[Why Are Smartphones Unreliable GPS Tracking Devices?](http://www.teamtrailways.com/why-are-smartphones-unreliable-gps-tracking-devices/)**
 > White paper (pdf) by Trailways team
 
-## What is GPS? ##
-Source: [Sources of GPS signal errors](http://www8.garmin.com/aboutGPS/)
+## Sources of GPS signal errors ##
+Source: [What is GPS?](http://www8.garmin.com/aboutGPS/)
 
 Factors that can degrade the GPS signal and thus affect accuracy include the following:
 
