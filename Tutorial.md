@@ -1,7 +1,7 @@
 ## Seven (7) Simple Google Map Examples in one mobile app., A quick tutorial ##
 Date: 2015-08-12
 
-This tutorial does three major things 
+These examples work in a webbrowser and will compile with [Phonegap Build](https://build.phonegap.com/) into a mobile app. This tutorial does three major things 
 
 1. Gets Google Maps based on latlong (Latitude and Longitude)
 2. Does a reverse geocoding lookup (latlong to street Address)
@@ -23,15 +23,15 @@ Many Apps have the secondary need for a map &ndash; based on your current locati
 
 This post deals with setting up and implementing a GPS-based Google map on your mobile device.
 
-First, you will need to get a [Google API key](https://developers.google.com/maps/documentation/javascript/tutorial#api_key) for map creation. If you have a developers account, create an API key for use with Javascript. This is a client side key. If you are have problems with this and are working with phonegap, post to the [Google Group for Phonegap](https://groups.google.com/forum/#!forum/phonegap) for help on creating an API key.
+First, you will need to get a [Google API key](https://developers.google.com/maps/documentation/javascript/tutorial#api_key) for map creation. If you have a developer's account, create an API key for use with Javascript. This is a client side key. If you are having problems with this and are working with phonegap, post to the [Google Group for Phonegap](https://groups.google.com/forum/#!forum/phonegap) for help on *creating a Google map API key*.
 
 
-Next download (or clone) all the examples on github.com with:
+Next clone (or download) all the examples on github.com with:
 ```
     git clone https://github.com/jessemonroy650/googleMapExamples.git
 ```
 
-You can also download the the archived (zip) bundle with your webbrowser
+Download the archived (zip) bundle with your webbrowser, the URL is
 ```
 https://github.com/jessemonroy650/googleMapExamples/archive/master.zip
 ```
@@ -60,7 +60,7 @@ The numbers below correspond to the numbers in the app.
 2. Map loaded in asynchronous mode of San Francisco, California.<p /> For details on synchronous vs. asynchronous, SEE: [Notes on map production.md](Notes on map production.md)
 3. Same as 2), and a reverse geocoding look for **"655 Redd Road, El Paso, TX 79912, USA"**. The answer will show up in the **console**.
 4. Map loaded in asynchronous mode of **"Hacker Dojo, 599 Fairchild Drive, Mountain View, CA 94043"**. Then there is a reverse geocoding look for "655 Redd Road, El Paso, TX 79912"; the answer will show up in the lower panels underneath the map. This shows that the map and geocoding API work separately and are not tied together.
-5. Load the map asynchronously with *"Hacker Dojo, 599 Fairchild Drive, Mountain View, CA 94043"*. Then a GPS lookup of your *current location* is done. After that a new map loads and a reverse geocoding lookup is made for your current location; the geocoding answer will show up in the lower panels.
+5. Load the map asynchronously with *"Hacker Dojo, 599 Fairchild Drive, Mountain View, CA 94043"*. Then a GPS lookup of your *current location* is done. After that a new map loads and a reverse geocoding lookup is made _for your current location_; the geocoding answer will show up in the lower panels.
 6. For your **current location**, the map loads and and there is a reverse geocoding look; the answer will show up in the lower panel. NOTE: If the network is not avaiable, or the app does not get permission to do a GPS lookup, then no map loading or reverse geocoding happen.
 7. Loads the map asynchronously with ***"FabLab, 806 Montana Ave, El Paso, Texas 79902"***. Then a GPS lookup of your current location is done, the map loads, and there is a reverse geocoding lookup. The answer to the lookup will show up in the lower panels. 
 
