@@ -11,9 +11,9 @@ This tutorial does three major things
 
 The goal of this tutorial is to give you the framework for a map addendum.
 
-Many Apps have the a secondary need for a map based on your current location. With the current mobile technology, GPS is readily available on my most smart phones. There are two big issues with implmenting "a map of the current location with GPS".
+Many Apps have the secondary need for a map &ndash; based on your current location. With the current mobile technology, GPS is readily available on my most smart phones. There are two big issues with implmenting "a map of the current location with GPS".
 
-1. GPS is not as reliable as people think.
+1. GPS is not as reliable as is the popular thinking.
 2. The leading vender google, has unclear documentation on their API.
 
 This post deals with setting up and implementing a GPS-based Google map on your mobile device.
