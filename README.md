@@ -1,6 +1,8 @@
 # googleMapExamples
 Seven (7) simple Google map examples in one mobile app.
 
+> Update: 2015-09-07 - NOTE: While this tutorial does use Phonegap and the plugins, each map is on a separate page, which means it does not get the permissions correctly. With a plugin, you only need to ask permission once - when the App is installed; not everytime as this does on iOS.
+
 This tutorial does three major things 
 
 1. Gets Google Maps based on latlong (Latitude and Longitude)
